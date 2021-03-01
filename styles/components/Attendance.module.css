@@ -1,0 +1,130 @@
+.containerAttendance {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerAttendance fieldset {
+    padding: 2rem 1rem;
+    border-radius: 5px;
+}
+
+.selectAttendance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 80%;
+
+    padding: 1rem 2rem;
+    margin: 0 auto;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.selectAttendance div {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80%;
+
+    padding: 1rem 2rem;
+    margin: 0.5rem auto 0;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.formControl > h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formControl  p {
+    margin-bottom: 0.5rem;
+}
+
+.formControl span {
+    margin-left: 0.5rem;
+}
+
+.formControl div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formControl div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControl input {
+    margin-right: 0.5rem;
+}
+
+.formControl input[type=text],
+.formControl input[type=number] {
+    width: 100%;
+}
+
+.formControl textarea {
+    width: 80%;
+    height: 10rem;
+    padding-left: 1rem;
+    resize: none;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 80%;
+
+    padding: 1rem;
+    margin: 1rem auto 0;
+}
+
+.submit input {
+    color: white;
+    background: green;
+
+    padding: 0.5rem 2.5rem;
+
+    font: 1.1rem;
+
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+    .selectAttendance {
+        flex-direction: column;
+    }
+
+    .selectAttendance div {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .formControl div {
+        flex-direction: column;
+
+        margin-bottom: 1rem;
+    }
+
+    .formControl textarea {
+        width: 100%;
+    }
+}

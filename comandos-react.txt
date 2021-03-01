@@ -1,0 +1,25 @@
+yarn create next-app <nome-do-projeto> -> com yarn
+npx create-next-app <nome-do-projeto> -> com npm
+
+
+yarn add typescript @types/react @types/react-dom @types/node -D
+    rodar servidor: yarn dev
+
+biblioteca para salvar dados no cookie
+    yarn add js-cookie
+
+
+deploy utilizando a vercel
+    sudo export PATH="$(yarn global bin):$PATH"
+    yarn global add vercel
+    
+    vercel -h
+    vercel login
+
+    subir deploy 
+        vercel
+    subir deploy com atualização
+        vercel (cria um no endereço provisorio- se estiver tudo ok )
+                vercel --prod
+    subir atualização de deploy sem verificar 
+        vercel --prod

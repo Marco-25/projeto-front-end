@@ -1,0 +1,240 @@
+.containerPathologyRegister {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectPatient {
+    color: white;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.selectPatient select {
+    width: 30%;
+}
+
+.selectPatient select option{
+    border-radius: 10px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid ;
+    border-radius: 5px;
+
+    padding: 1rem;
+    
+    width: 80%;
+    margin: 1rem auto 0;
+}
+
+.formControl {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 0.8rem;
+}
+
+.TextArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.TextArea textarea {
+    width: 60%;
+    height: 4rem;
+    padding-left: 1rem;
+    resize: none;
+}
+
+.controlRadio div label:last-child {
+    margin-left: 1rem;
+}
+
+.controlAllergic {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+    margin: 1rem auto 0;
+
+    width: 80%;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.controlAllergic > div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.controlAnalysis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80%;
+
+    padding: 1rem;
+    margin: 1rem auto 0;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.controlAnalysis > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.controlAnalysis h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.controlAnalysis > div > div{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0.5rem;
+}
+
+.controlAnalysis > div > div input{
+    margin-right: 0.5rem;
+}
+
+.SensitiveToPain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80%;
+
+    padding: 1rem;
+    margin: 1rem auto 0;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.SensitiveToPain h3 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.SensitiveToPain div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.SensitiveToPain div input {
+    margin-right: 0.5rem;
+}
+
+.shoe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 80%;
+
+    padding: 1rem;
+    margin: 1rem auto 0;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.shoe div:nth-child(2){
+    width: 50%;
+}
+
+.shoe div input{
+    width: 90%;
+}
+
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 80%;
+
+    padding: 1rem;
+    margin: 1rem auto 0;
+}
+
+.submit input {
+    color: white;
+    background: green;
+    padding: 0.3rem 1.2rem;
+    font: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+    .TextArea textarea{
+        width: 100%;
+    }
+
+    .controlAllergic {
+        flex-direction: column;
+    }
+
+    .controlAllergic div {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .controlAnalysis > div {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .controlAnalysis > div > div {
+        margin-bottom: 1rem;
+    }
+
+    .controlAnalysis > div > div label {
+        margin-left: 1rem;
+    }
+
+    .SensitiveToPain > div{
+        flex-direction: column;
+    }
+
+    .shoe {
+        flex-direction: column;
+    }
+
+    .shoe div {
+        width: 100%;
+    }
+    .shoe div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .formControl {
+        flex-direction: column;
+    }
+
+    .controlRadio {
+        margin-bottom: 0.8rem;
+    }
+    .TextArea textarea{
+        width: 100%;
+    }
+}

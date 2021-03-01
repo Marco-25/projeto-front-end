@@ -1,0 +1,32 @@
+.ContainerSchedule {
+    border: 1px solid gray;
+
+    width: 80%;
+    margin: 2rem auto 0;
+}
+
+.ContainerScheduleTable {
+    width: 80%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.ContainerScheduleTable th {
+    border: 1px solid;
+    
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid;
+}
+
+.days {
+
+    width: 2rem;
+    height: 2rem;
+}
