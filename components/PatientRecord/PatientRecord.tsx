@@ -1,4 +1,4 @@
-import styles from '../styles/components/PatientRecord.module.css'
+import styles from './PatientRecord.module.css'
 
 export default function PatientRecord() {
     return (

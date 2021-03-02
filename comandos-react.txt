@@ -11,6 +11,8 @@ biblioteca para salvar dados no cookie
 
 deploy utilizando a vercel
     sudo export PATH="$(yarn global bin):$PATH"
+        caso primeiro falhar -> export PATH=$PATH:~/.yarn/bin
+
     yarn global add vercel
     
     vercel -h

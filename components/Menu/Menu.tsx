@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/components/Menu.module.css'
+import styles from './Menu.module.css'
 
 export default function Menu() {
 
@@ -7,7 +7,9 @@ export default function Menu() {
 
         <section className={styles.Header}>
             <div className={styles.container}>
-                <div className={styles.brand}>Logo</div>
+                <Link href="/">
+                    <div className={styles.brand}>Logo</div>
+                </Link>
 
                 <nav>
                     <ul className={styles.menuDesktop}>

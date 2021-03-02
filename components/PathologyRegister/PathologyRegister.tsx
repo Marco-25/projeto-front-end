@@ -1,4 +1,4 @@
-import styles from '../styles/components/PathologyRegister.module.css'
+import styles from './PathologyRegister.module.css'
 
 export default function PathologyRegister() {
     return (

@@ -22,6 +22,12 @@
 .brand {
     color: rgb(186, 185, 199);
     font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.brand:hover {
+    color: black;
 }
 
 .menuDesktop {
@@ -37,4 +43,9 @@
 .menuDesktop a {
     text-decoration: none;
     color: white;
+}
+
+.menuDesktop a:hover {
+    text-decoration: underline;
+    color: black;
 }

@@ -1,4 +1,4 @@
-import styles from '../styles/components/Schedule.module.css'
+import styles from './Schedule.module.css'
 
 export default function Schedule() {
     //pega o mes como um vetor sendo 0 janeiro 11 dezembro
@@ -22,10 +22,14 @@ export default function Schedule() {
     return (
         <div className={styles.ContainerSchedule}>
             <h3>Agenda | </h3>
-
+            <br />
             <div className={styles.calendar}>
-                <ul className={styles.days}>
-                    {generateDays().map(day => { day })}
+                <ul>
+                    {generateDays().map((day, index) => {
+                        return (
+                            <div className={styles.days} key={index}> {day} </div>
+                        )
+                    })}
                 </ul>
             </div>
 

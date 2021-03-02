@@ -1,4 +1,4 @@
-import styles from '../styles/components/Attendance.module.css'
+import styles from './Attendance.module.css'
 
 export default function Attendance() {
 

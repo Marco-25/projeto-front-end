@@ -19,14 +19,15 @@
 }
 
 .calendar {
-    display: flex;
-    flex-direction: column;
+    /* border: 1px solid; */
+    /* margin: 0 auto; */
 
-    border: 1px solid;
 }
 
 .days {
+    display: inline-flex;
+    border: 1px solid;
 
-    width: 2rem;
-    height: 2rem;
+    width: 7rem;
+    height: 7rem;
 }
