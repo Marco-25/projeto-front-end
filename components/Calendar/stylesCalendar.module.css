@@ -1,0 +1,134 @@
+.calendar {
+  box-sizing: border-box;
+  font-size: 1rem;
+  /* max-width: 600px; */
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(33, 102, 192);
+  text-align: center;
+  min-height: 2rem;
+  line-height: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  display: flex;
+
+  letter-spacing: 0.1rem;
+}
+
+.dayNames {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.body {
+  border: 1px solid rgb(33, 102, 192);
+}
+
+.previous {
+  width: 10%;
+  text-align: left;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.previous:hover {
+  color: white;
+}
+
+.current {
+  flex: 1;
+}
+
+.next {
+  width: 10%;
+  text-align: right;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.next:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.week {
+  background-color: white;
+  width: calc(100% / 7);
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(32, 27, 27);;
+  font-weight: 400;
+}
+.week div {
+  width: 100%;
+}
+
+.day {
+  position: relative;
+  width: calc(100% / 7);
+  height: 44px;
+  display: inline-block;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day div {
+  margin: 0 auto;
+
+  width: 54px;
+  height: 44px;
+  position: relative;
+  color: rgb(32, 27, 27);
+  z-index: 100;
+  line-height: 44px;
+}
+
+.before {
+  color: gray!important;
+}
+
+.selected {
+  background-color: rgb(206, 59, 59);
+  color: white!important;
+  font-weight: bold;
+}
+
+.today {
+  background-color: rgb(205, 205, 205);
+}
+
+.tasksOfDay {
+  margin: 2rem auto 0;
+
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border: 1px solid ; */
+}
+
+.tasksOfDay h3 {
+  background: rgb(33, 102, 192);
+  color: black;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tasksOfDay li {
+  list-style: none;
+  border-bottom: 1px solid;
+  margin-bottom: 1px;
+}

@@ -9,8 +9,8 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  background: rgb(32, 27, 27);
-  color: rgb(206, 195, 195);
+  background: rgb(31, 44, 54);
+  color: rgb(252, 245, 245);
 }
 
 header {
@@ -31,6 +31,9 @@ textarea:focus {
 input,
 select {
   padding: 0.1rem 0 0.1rem 0.6rem;
-  border-radius: 1rem;
+
+  height: 1.5rem;
+
+  font-size: 0.9rem;
 }
 

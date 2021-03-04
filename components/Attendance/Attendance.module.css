@@ -19,7 +19,7 @@
     margin: 0 auto;
 
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 2px!important;
 }
 
 .selectAttendance div {
@@ -67,6 +67,11 @@
     flex-direction: column;
 }
 
+.formControl div div label{
+    display: inline-flex;
+    align-items: center;
+}
+
 .formControl input {
     margin-right: 0.5rem;
 }
@@ -95,15 +100,19 @@
 }
 
 .submit input {
+    text-align: center;
     color: white;
+    font-weight: 600;
     background: green;
 
-    padding: 0.5rem 2.5rem;
-
-    font: 1.1rem;
+    width: 20%;
 
     border: none;
     cursor: pointer;
+}
+
+.submit input:hover {
+    opacity: .8;
 }
 
 @media screen and (max-width: 769px) {

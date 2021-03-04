@@ -1,9 +1,12 @@
 import Head from "next/head"
 import Menu from "../components/Menu"
-import Schedule from "../components/Schedule"
+import Calendar from "../components/Calendar"
+import moment from 'moment'
+import { useState } from 'react';
+
 
 export default function Agenda() {
-
+    const [value, setValue] = useState(moment())
     return (
         <>
             <Head>
@@ -11,7 +14,7 @@ export default function Agenda() {
             </Head>
             <Menu />
             <main>
-                <Schedule />
+                <Calendar value={value} onChange={setValue} />
             </main>
         </>
     )

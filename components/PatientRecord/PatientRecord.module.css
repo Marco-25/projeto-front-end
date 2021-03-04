@@ -6,6 +6,7 @@
 .containerPatientRecord fieldset {
     padding: 0 1rem;
     border-radius: 5px;
+
 }
 
 .containerPatientRecord legend {
@@ -68,8 +69,19 @@
     display: inline-block;
 }
 
+.controlRadio div label {
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.controlRadio div input {
+    margin-right: .5rem;
+}
+
 .controlRadio div label:last-child {
     margin-left: 1rem;
+
 }
 
 .formControlAddress > div:nth-child(1) {

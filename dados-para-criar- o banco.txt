@@ -1,0 +1,75 @@
+dados para criar o banco de dados
+
+//cadastro de atendimento
+selectPatientAttendance
+servicePoints
+footLeftObservations
+rightLeftObservations
+digitPressureLeftFoot
+digitPressureRightFoot
+monofilamentTestLeftFoot
+monofilamentTestRightFoot
+pathologyDermatologyLeftFoot
+pathologyDermatologyRightFoot
+pathologyNailsPresentLeftFoot
+pathologyNailsPresentRightFoot
+procedureAccomplished
+
+
+//cadastro de patologia
+selectPatient
+diabetes
+historicalDiabetes
+diabetesObservations
+
+hypertension
+historicalHypertension
+hypertensionObservations
+
+medicines
+historicalMedicines
+medicinesObservations
+
+allergicMedicines
+whatMedicines
+
+painSensitivity
+
+kindOfSock
+typeOfFootwear
+numberOfShoes
+
+//cadastro de pre-analise 
+aboutThePatient-cancer defaul false
+aboutThePatient-pacemaker defaul false
+aboutThePatient-pins defaul false
+aboutThePatientcardiopathy defaul false
+aboutThePatient-footSurgery defaul false
+
+aboutThePatientFoot-callus defaul false
+aboutThePatientFoot-callosity defaul false
+aboutThePatientFoot-fissure defaul false
+aboutThePatientFoot-dryness defaul false
+aboutThePatientFoot-psoriasis defaul false
+aboutThePatientFoot-pantarWart defaul false
+
+aboutThePatientNail-onychocriptosis
+aboutThePatientNail-onycholysis
+aboutThePatientNail-onychomycosis
+aboutThePatientNail-onychophoresis
+
+//cadastro de paciente
+recommendation
+name,
+bithDate date
+gender,
+email,
+cell,
+profession,
+zipCode,
+city,
+address,
+number,
+district,
+practiceActivity,
+whatActivity
