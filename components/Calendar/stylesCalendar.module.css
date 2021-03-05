@@ -132,3 +132,28 @@
   border-bottom: 1px solid;
   margin-bottom: 1px;
 }
+
+.tasksOfDay form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.tasksOfDay input {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.tasksOfDay input[type=submit] {
+  width: 20%;
+  background: green;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+.tasksOfDay input[type=submit]:hover {
+  opacity: 0.9;
+}

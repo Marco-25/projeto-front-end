@@ -1,3 +1,4 @@
+import HomePage from "../components/Home"
 import Menu from "../components/Menu"
 
 export default function Home() {
@@ -5,8 +6,9 @@ export default function Home() {
 
         <>
             <Menu />
+            <br />
             <main>
-                <h3>Home</h3>
+                <HomePage />
             </main>
         </>
     )

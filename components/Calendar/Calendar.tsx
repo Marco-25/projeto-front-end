@@ -11,6 +11,7 @@ export default function Calendar({ value, onChange }) {
     const [calendar, setCalendar] = useState([])
     const now = moment(new Date()).format("DD/MM")
     const [dayMoth, setDayMonth] = useState(now)
+    const [tasks, setTasks] = useState('')
 
 
     useEffect(() => {
@@ -38,7 +39,7 @@ export default function Calendar({ value, onChange }) {
                                     onClick={() => {
                                         !beforeToday(day) && onChange(day)
                                         setDayMonth(day.format("DD/MM"))
-                                    }} //pegar dia do mes
+                                    }}
                                 >
                                     <div className={dayStyles(day, value)} >
                                         {day.format("D").toString()}
@@ -53,6 +54,26 @@ export default function Calendar({ value, onChange }) {
             </div>
 
             <section className={styles.tasksOfDay}>
+                <form
+                    method="post"
+                    onSubmit={event => {
+                        event.preventDefault()
+                        console.log({ tasks, dayMoth })
+                    }}
+                >
+
+                    <input
+                        onChange={event => setTasks(event.target.value)}
+                        value={tasks}
+                        name="tasks"
+                        id="tasks"
+                        placeholder="Cadastre uma Tarefa"
+                        type="text" />
+
+                    <input type="submit" name="register" id="register" />
+
+                </form>
+
                 <h3>Tarefas do Dia | {dayMoth}</h3>
 
                 <ul>

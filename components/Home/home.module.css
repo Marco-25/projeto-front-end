@@ -1,0 +1,119 @@
+.containerHome {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerHome > div {
+    border: 1px solid;
+    padding: 1rem;
+}
+
+.containerHome div:first-child {
+    width: 60%;
+}
+
+.containerHome div:last-child {
+    width: 40%;
+}
+
+.containerHome__patient h4 {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: black;
+    background:rgb(33, 102, 192) ;
+}
+
+
+.containerHome__patient form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerHome__patient input {
+    padding: 0 1rem;
+}
+
+.containerHome__patient input[type=submit] {
+    background: green;
+    color: black;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.containerHome__patient input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+.containerHome__patient ul {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.containerHome__patient li {
+    border-bottom: 1px solid;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerHome__patientButtons {
+    width: 10rem!important;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerHome__patientButtons button {
+    padding: 0 1rem;
+}
+
+.containerHome__patientButtons button {
+    color: black;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.containerHome__patientButtons button:hover {
+    opacity: 0.9;
+}
+
+.containerHome__patientButtons button:first-child{
+    background: rgb(21, 129, 196);
+}
+
+.containerHome__patientButtons button:last-child{
+    background: rgb(236, 29, 39);
+}
+
+.containerHome__tasks {
+    padding: 1rem;
+}
+.containerHome__tasks h4 {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: black;
+    background:rgb(33, 102, 192) ;
+}
+
+.containerHome__tasks ol {
+    list-style: none;
+}
+
+.containerHome__tasks ol > span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerHome__tasks ol li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

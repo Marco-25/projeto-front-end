@@ -3,8 +3,8 @@ dados para criar o banco de dados
 //cadastro de atendimento
 selectPatientAttendance
 servicePoints
-footLeftObservations
-rightLeftObservations
+footLeftObservationsProfessional
+rightLeftObservationsProfessional
 digitPressureLeftFoot
 digitPressureRightFoot
 monofilamentTestLeftFoot
@@ -73,3 +73,11 @@ number,
 district,
 practiceActivity,
 whatActivity
+
+
+
+
+
+
+
+
