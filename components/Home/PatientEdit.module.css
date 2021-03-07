@@ -1,0 +1,252 @@
+.overlay {
+    background: rgba(242,243,245,0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    width: 992px!important;
+
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0,0, 0.05);
+    text-align: center;
+    position: relative;
+}
+
+.body {
+    padding: 2rem;
+    background: rgb(31, 44, 54);
+    /* background: rgb(33, 102, 192); */
+}
+
+
+.formControlModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 850px!important;
+    margin: 0 auto 1rem 0;
+}
+
+.formControlModal div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControlModal div label{
+    text-align: start;
+}
+
+.formControlModal div input{
+    margin-right: 1rem;
+}
+
+.formRadioModal {
+    display: flex;
+    flex-direction: row;
+}
+
+.formButtonModal {
+   display: flex;
+   justify-content: flex-end;
+
+   width: 835px!important;
+}
+
+.formButtonModal input {
+    color: black;
+    font-weight: 600;
+    padding: 0 2rem;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.formButtonModal input:first-child {
+    background: gray;
+    margin-right: 1rem;
+}
+
+.formButtonModal input:last-child {
+    background: rgb(33, 102, 192);
+}
+
+.formButtonModal input:hover {
+    opacity: 0.9;
+}
+
+.container button {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    right: 0.9rem;
+    top: 0.9rem;
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.col30 {
+    width: 30%!important;
+}
+
+.col60 {
+    width: 60%!important;
+}
+
+@media screen and (max-width: 900px) {
+    .overlay {
+        position: absolute;
+        margin-top: 0;
+
+        height: 1200px;
+    }
+
+    .container {
+        width: 760px!important;
+    }
+
+    .formControlModal {
+        flex-direction: column;
+        width: 600!important;
+        margin: 0 auto;
+    }
+
+    .formControlModal div {
+        width: 600px;
+    }
+
+    .formControlModal input[type=text], 
+    .formControlModal input[type=number] {
+        width: 600px;
+        margin-bottom: 0.5rem;
+    }
+
+    .formRadioModal {
+        width: 100px;
+       display: inline-flex;
+    }
+
+    .formButtonModal {
+       display: flex;
+       justify-content: flex-end;
+    
+       width: 600px!important;
+    }
+    
+    .col30 {
+        width: 50%!important;
+    }
+    
+    .col60 {
+        width: 50%!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .overlay {
+        position: absolute;
+        margin-top: 0;
+
+        height: 1200px;
+    }
+
+    .container {
+        width: 300px!important;
+    }
+
+    .formControlModal {
+        flex-direction: column;
+        width: 200!important;
+        margin: 0 auto;
+    }
+
+    .formControlModal div {
+        width: 200px;
+    }
+
+    .formControlModal input[type=text], 
+    .formControlModal input[type=number] {
+        width: 200px;
+        margin-bottom: 0.5rem;
+    }
+
+    .formRadioModal {
+        width: 100px;
+       display: inline-flex;
+    }
+
+    .formButtonModal {
+       display: flex;
+       justify-content: flex-end;
+    
+       width: 200px!important;
+    }
+    
+    .col30 {
+        width: 50%!important;
+    }
+    
+    .col60 {
+        width: 50%!important;
+    }
+}
+
+@media screen and (max-width: 779px) {
+    .overlay {
+        position: absolute;
+        margin-top: 0;
+
+        height: 1200px;
+    }
+
+    .container {
+        width: 600px!important;
+    }
+
+    .formControlModal {
+        flex-direction: column;
+        width: 400!important;
+        margin: 0 auto;
+    }
+
+    .formControlModal div {
+        width: 400px;
+    }
+
+    .formControlModal input[type=text], 
+    .formControlModal input[type=number] {
+        width: 400px;
+        margin-bottom: 0.5rem;
+    }
+
+    .formRadioModal {
+        width: 100px;
+       display: inline-flex;
+    }
+
+    .formButtonModal {
+       display: flex;
+       justify-content: flex-end;
+    
+       width: 400px!important;
+    }
+    
+    .col30 {
+        width: 50%!important;
+    }
+    
+    .col60 {
+        width: 50%!important;
+    }
+}

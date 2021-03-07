@@ -1,48 +1,32 @@
 import Link from 'next/link'
 import styles from './Menu.module.css'
+import { useRouter } from 'next/router'
 
 export default function Menu() {
+    const router = useRouter()
 
     return (
 
         <section className={styles.Header}>
             <div className={styles.container}>
-                <Link href="/">
-                    <div className={styles.brand}>Logo</div>
-                </Link>
+                <div className={styles.brand}>
+                    <a onClick={() => router.push('/')} >LOGO</a>
+                </div>
 
                 <nav>
                     <ul className={styles.menuDesktop}>
-                        <li>
-                            <Link href="/">
-                                <a>Home</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/cadastro">
-                                <a>Cadastro</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/patologia">
-                                <a>Patologia</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/atendimento">
-                                <a>Atendimento</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/agenda">
-                                <a>Agenda</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/sair">
-                                <a>Sair</a>
-                            </Link>
-                        </li>
+                        <a onClick={() => router.push('/')} >Home</a>
+
+                        <a onClick={() => router.push('/cadastro')} >Cadastro</a>
+
+                        <a onClick={() => router.push('/patologia')} >patologia</a>
+
+                        <a onClick={() => router.push('/atendimento')} >atendimento</a>
+
+                        <a onClick={() => router.push('/agenda')} >agenda</a>
+
+                        <a onClick={() => router.push('/sair')} >sair</a>
+
                     </ul>
                 </nav>
             </div>

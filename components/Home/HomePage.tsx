@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import closeModal from '../../context/CloseModalPatient'
 import styles from './home.module.css'
 import PatientHome from './PatientHome'
 import TasksHome from './TasksHome'

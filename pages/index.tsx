@@ -6,10 +6,11 @@ export default function Home() {
 
         <>
             <Menu />
-            <br />
-            <main>
+
+            <div className='homepage'>
                 <HomePage />
-            </main>
+            </div>
+
         </>
     )
 
