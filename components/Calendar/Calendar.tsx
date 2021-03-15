@@ -19,7 +19,7 @@ export default function Calendar({ value, onChange }) {
     }, [value])
 
     return (
-        <>
+        <div className={styles.containerPrincipal}>
             <div className={styles.calendar}>
                 <CalendarHeader value={value} setValue={onChange} />
                 <div className={styles.body}>
@@ -70,7 +70,7 @@ export default function Calendar({ value, onChange }) {
                         placeholder="Cadastre uma Tarefa"
                         type="text" />
 
-                    <input type="submit" name="register" id="register" />
+                    <input type="submit" value="cadastrar" name="register" id="register" />
 
                 </form>
 
@@ -83,6 +83,6 @@ export default function Calendar({ value, onChange }) {
                 </ul>
 
             </section>
-        </>
+        </div>
     )
 }

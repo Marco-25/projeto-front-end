@@ -10,14 +10,9 @@ export default function PatientHome() {
     const [search, setSearch] = useState('')
     const [modalEditOpen, setModalEditOpen] = useState(false)
 
-
-    function showModalEdit() {
-        return modalEdit()
-    }
-
     useEffect(() => {
         if (modalEditOpen) {
-            showModalEdit()
+            modalEdit()
         }
     }, [modalEditOpen])
 
@@ -28,24 +23,26 @@ export default function PatientHome() {
         <>
             <div className={styles.containerHome__patient}>
 
-                <h4>Lista de pacientes</h4>
-                <form method="post"
-                    onSubmit={event => {
-                        event.preventDefault()
-                        console.log({ search })
-                    }}
-                >
-                    <input
-                        onChange={event => setSearch(event.target.value)}
-                        value={search}
-                        name="search"
-                        id="search"
-                        placeholder="Pesquise por uma paciente"
-                        type="text" />
+                <div>
+                    <h4>Lista de pacientes</h4>
+                    <form method="post"
+                        onSubmit={event => {
+                            event.preventDefault()
+                            console.log({ search })
+                        }}
+                    >
+                        <input
+                            onChange={event => setSearch(event.target.value)}
+                            value={search}
+                            name="search"
+                            id="search"
+                            placeholder="Pesquise por uma paciente"
+                            type="text" />
 
-                    <input type="submit"
-                        value="Pesquisar" />
-                </form>
+                        <input type="submit"
+                            value="Pesquisar" />
+                    </form>
+                </div>
 
                 <ul className={styles.containerListPatient}>
 
@@ -58,13 +55,17 @@ export default function PatientHome() {
 
                                 <div className={styles.containerHome__patientButtons}>
 
+                                    <button onClick={() => router.push('/patologias')}>
+                                        Patologias
+                                    </button>
+
                                     <button onClick={() => setModalEditOpen(true)}>
-                                        editar
+                                        <img src="edit.svg" alt="" />
                                     </button>
                                     <button onClick={() => {
                                         { confirm("desja excluir o registro?") ? console.log("excluido") : console.log("cancelado") }
                                     }}>
-                                        excluir
+                                        <img src="delete.svg" alt="" />
                                     </button>
                                 </div>
 
@@ -73,7 +74,7 @@ export default function PatientHome() {
                     }
                 </ul>
             </div>
-            {(modalEditOpen === true) ? showModalEdit() : ''}
+            {(modalEditOpen === true) ? modalEdit() : ''}
         </>
     )
 
@@ -83,8 +84,8 @@ export default function PatientHome() {
             <div className={style.overlay}>
                 <div className={style.container}>
                     <header>
-                        Editar paciente
-                </header>
+                        <h4>Editar paciente</h4>
+                    </header>
                     <div className={style.body}>
                         <form method="post">
 
@@ -150,12 +151,14 @@ export default function PatientHome() {
                             <div className={style.formControlModal}>
                                 <div >
                                     <label>Pratica Atividade Fisica</label>
-                                    <label className={style.formRadioModal}>
-                                        <input type="radio" name="gender" /> <span>sim</span>
-                                    </label>
-                                    <label className={style.formRadioModal}>
-                                        <input type="radio" name="gender" /> <span>não</span>
-                                    </label>
+                                    <span className={style.formControlModalRadio}>
+                                        <label>
+                                            <input type="radio" name="gender" /> <span>sim</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender" /> <span>não</span>
+                                        </label>
+                                    </span>
                                 </div>
 
                                 <div className={style.col60}>
@@ -174,8 +177,7 @@ export default function PatientHome() {
                     </div>
 
                     <footer>
-                        alguma coisa
-                </footer>
+                    </footer>
                     <button onClick={() => setModalEditOpen(false)}>
                         x
                 </button>

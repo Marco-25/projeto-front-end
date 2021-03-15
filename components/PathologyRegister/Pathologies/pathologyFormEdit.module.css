@@ -1,0 +1,174 @@
+.containerFluid {
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px rgb(31, 27, 27);
+}
+
+.patientAttendance {
+    margin-bottom: 1rem;
+}
+
+.patientAttendance p{
+    color:black
+}
+
+.patientAttendance a {
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 4px;
+    background: rgb(37, 83, 168);
+    color: white;
+    cursor: pointer;
+}
+
+.title {
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(22, 19, 19);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    margin: 1rem auto;
+    border: 1px solid;
+    padding: 1rem;
+    color: rgb(22, 19, 19);
+}
+
+.container:last-child {
+    border: none;
+}
+
+.container h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.boxSingle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boxSingle > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxSingle > div > label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.boxSingle > div > label > span {
+    margin-left: 1rem;
+}
+
+.boxSingleObservations {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxSingleObservations span{
+    text-align: center;
+}
+
+.boxSingleObservations .textarea {
+    width: 70%;
+    height: 5rem;
+    margin: 0 auto;
+    resize: none;
+}
+
+.containerCheckBox h4 {
+    color: cornsilk;
+    padding-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.containerCheckBox label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.boxSingle > label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.boxSingle > label > span {
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+}
+
+.buttonsEdit {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttonsEdit input[type=submit] {
+    padding: 0 2rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+}
+
+.buttonsEdit input:first-child {
+    margin-right: 1rem;
+    background: gray;
+}
+
+.buttonsEdit input:last-child {
+    background: rgb(13, 187, 13);
+}
+
+.buttonsEdit input:hover {
+    opacity: 0.9;
+}
+
+.formControlRadio {
+    display: inline-flex;
+}
+
+/* modal attendance */
+
+
+/* mobile */
+
+@media screen and ( max-width: 992px) {
+
+}
+
+@media screen and ( max-width: 769px) {
+    .boxSingle {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .textarea {
+        width: 100%!important;
+    }
+
+    .boxSingleObservations span{
+        text-align: start;
+    }
+
+    .boxSingle > div  {
+        margin-bottom: 1rem;
+    }
+
+    .boxSingle > span  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}

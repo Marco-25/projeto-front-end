@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from './PathologyRegister.module.css'
+import style from './PathologyEdit.module.css'
 
 export default function PathologyRegister() {
     const [selectPatient, setSelectPatient] = useState('')
@@ -84,6 +85,7 @@ export default function PathologyRegister() {
         setAboutThePatientNail_onychophoresis('')
     }
 
+
     return (
         <div className={styles.containerPathologyRegister}>
 
@@ -128,7 +130,7 @@ export default function PathologyRegister() {
                     clearForm()
                 }}>
                 <fieldset>
-                    <legend>Cadastro de Patologia</legend>
+                    <h4>Cadastro de Patologia</h4>
 
                     <div className={styles.selectPatient}>
                         <select
@@ -504,7 +506,7 @@ export default function PathologyRegister() {
                         </div>
 
                         <div>
-                            <label>Tipo de calçado que mais usa</label>
+                            <label>calçado que mais usa</label>
                             <input
                                 onChange={event => setTypeOfFootwear(event.target.value)}
                                 value={typeOfFootwear}
@@ -532,6 +534,9 @@ export default function PathologyRegister() {
 
                 </fieldset>
             </form>
+            <br />
         </div >
+
     )
+
 }

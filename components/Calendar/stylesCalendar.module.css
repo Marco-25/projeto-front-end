@@ -1,13 +1,24 @@
+.containerPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .calendar {
   box-sizing: border-box;
   font-size: 1rem;
   /* max-width: 600px; */
-  width: 70%;
+  width: 56%;
   margin: 0 auto;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgb(26, 23, 23);
 }
 
 .header {
-  background-color: rgb(33, 102, 192);
+  background-color: rgb(32, 113, 219);
   text-align: center;
   min-height: 2rem;
   line-height: 2rem;
@@ -27,7 +38,7 @@
 }
 
 .body {
-  border: 1px solid rgb(33, 102, 192);
+  border: none;
 }
 
 .previous {
@@ -110,27 +121,37 @@
 }
 
 .tasksOfDay {
-  margin: 2rem auto 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  /* margin: 2rem auto 0; */
 
-  width: 70%;
+  width: 39%;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* border: 1px solid ; */
+
+  box-shadow: 0 0 2px 1px rgb(20, 19, 19);
 }
 
 .tasksOfDay h3 {
-  background: rgb(33, 102, 192);
-  color: black;
-  padding-left: 1rem;
+  color: rgb(22, 19, 19);
   margin-bottom: 0.5rem;
 }
 
 .tasksOfDay li {
+  display: flex;
+  align-items: center;
+  color: rgb(22, 19, 19);
   list-style: none;
   border-bottom: 1px solid;
   margin-bottom: 1px;
+  height: 1.8rem;
+}
+
+.tasksOfDay li:hover {
+  background-color: lightgray;
 }
 
 .tasksOfDay form {
@@ -140,16 +161,18 @@
 }
 
 .tasksOfDay input {
-  width: 80%;
+  width: 75%;
   margin-bottom: 0.5rem;
+  border-radius: 1px 0 0 1px ;
 }
 
 .tasksOfDay input[type=submit] {
-  width: 20%;
-  background: green;
+  width: 25%;
+  background: rgb(10, 177, 10);
   border: none;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
-  color: black;
+  color: white;
   font-weight: 600;
   padding: 0 1rem;
 }

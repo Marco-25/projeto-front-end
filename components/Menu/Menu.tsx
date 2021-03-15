@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from './Menu.module.css'
 import { useRouter } from 'next/router'
 

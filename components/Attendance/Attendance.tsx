@@ -61,7 +61,7 @@ export default function Attendance() {
                 }}
             >
                 <fieldset>
-                    <legend>Cadastro de Atendimento</legend>
+                    <h4>Cadastro de Atendimento</h4>
 
                     <div className={styles.selectAttendance}>
                         <div>
@@ -299,7 +299,7 @@ export default function Attendance() {
 
                 </fieldset>
             </form>
-
+            <br />
         </div>
     )
 }

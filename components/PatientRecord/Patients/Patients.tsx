@@ -92,6 +92,7 @@ export default function Patients() {
                 </div>
 
             </div>
+            <br />
         </>
     )
 }

@@ -9,21 +9,19 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  background: rgb(31, 44, 54);
+  background: white;
   color: rgb(252, 245, 245);
 }
 
-header {
-}
 .homepage {
-  width: 100vw;
+  width: 100%;
   max-width: 1200px;
   margin:  0 auto;
   padding-top: 5.5rem;
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   max-width: 1024px;
   margin:  0 auto;
   padding-top: 5.5rem;
@@ -33,14 +31,15 @@ main {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus 
+button:focus {
   outline: none;
 }
 input,
 select {
   padding: 0.1rem 0 0.1rem 0.6rem;
 
-  height: 1.5rem;
+  height: 2rem;
 
   font-size: 0.9rem;
 }

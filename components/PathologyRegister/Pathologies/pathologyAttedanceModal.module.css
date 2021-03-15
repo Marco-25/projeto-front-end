@@ -1,0 +1,88 @@
+.overlay {
+    background: rgba(242,243,245,0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+}
+
+.container {
+    background: white;
+    width: 992px!important;
+
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0,0, 0.05);
+    text-align: center;
+    position: relative;
+}
+
+.body {
+    padding: 2rem 1rem 0 1rem;
+    background: rgb(226, 226, 226);
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px rgba(17, 16, 16, 0.5);
+    color: rgb(29, 24, 24);
+}
+
+.body > p > strong {
+    color: black;
+}
+
+.container button {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    right: 0.9rem;
+    top: 0.9rem;
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boxSingle {
+    width: 90%;
+    margin: 0 auto;
+
+    padding: 0.5rem;
+    border-bottom: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.boxSingle h4 {
+    color: black;
+}
+
+.boxSingle strong {
+    color: black;
+}
+
+.boxSingle div {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.boxSingle > p {
+    overflow-y:auto;
+    width: 80%;
+    height: 10rem;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    text-indent: 10%;
+    text-align: justify;
+    border: 1px solid;
+}
+

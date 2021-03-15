@@ -64,7 +64,7 @@ export default function PatientRecord() {
                     }}
                 >
                     <fieldset>
-                        <legend>Cadastro de Paciente</legend>
+                        <h4>Cadastro de Paciente</h4>
 
                         <div className={styles.recommendation}>
                             <h3>Indicação</h3>
